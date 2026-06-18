@@ -17,11 +17,15 @@ html {
     padding: 0;
 }
 
-body {
+html, body {
     background-color: #000000;
     color: #ffffff;
     font-family: 'LCD40x2Display-Regular';
     overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 /* header */
@@ -485,7 +489,7 @@ body {
     justify-content: center;
     gap: 8px;
     padding: 5px;
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     font-family: 'LCD40x2Display-Regular';
 }
 
@@ -573,6 +577,151 @@ body {
 
 }
 
+@media (max-width: 768px) {
+    
+    .navbar {
+        position: relative !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        flex-direction: column !important;
+        gap: 12px !important;
+        padding: 12px !important;
+    }
+
+    .logo-container {
+        justify-content: center !important;
+        width: 100% !important;
+    }
+
+    .site-title {
+        font-size: 0.9rem !important;
+    }
+
+    .nav-menu {
+        justify-content: center !important;
+        width: 100% !important;
+        flex-wrap: wrap !important;
+        gap: 8px !important;
+    }
+
+    .nav-btn {
+        padding: 8px !important;
+        font-size: 0.75rem !important;
+        flex: 1 1 calc(50% - 8px) !important;
+        text-align: center !important;
+    }
+
+    .canvas-placeholder {
+        font-size: 1.5rem !important;
+    }
+
+    .hero-section {
+        padding-top: 10px !important;
+        width: 100% !important;
+        height: 50vh !important; /* Уменьшаем высоту холста, чтобы текст был ближе */
+    }
+
+    #paintCanvas {
+        top: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .terminal-section {
+        padding: 20px 15px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-height: auto !important;
+        display: block !important; /* Убираем flex, чтобы избежать сжатия */
+    }
+
+    .terminal-window {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .terminal-body {
+        padding: 15px 12px !important;
+        font-size: 0.85rem !important;
+        line-height: 1.5 !important;
+    }
+
+    .terminal-text {
+        text-align: left !important;
+        font-size: 0.90rem !important;
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
+        white-space: normal !important;
+    }
+
+    .terminal-title {
+        display: none;
+    }
+
+    .works-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .project-preview {
+        height: 180px;
+    }
+
+    .works-divider {
+        font-size: 0.9rem;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .tools-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 10px !important;
+        width: 100% !important;
+        padding: 0 10px !important;
+    }
+
+    .computer-wrapper {
+        max-width: 340px !important;
+    }
+
+    .footer-text {
+        font-size: 1.2rem;
+    }
+
+    .footer-subtext {
+        font-size: 0.9rem;
+    }
+
+    .icon-link {
+        width: 25px;
+        height: 25px;
+    }
+
+    .computer-screen {
+        font-size: 0.45rem !important;
+        gap: 25px !important;
+        left: 25px;
+    }
+    
+    .computer-img {
+    margin-left: -80px;
+}
+
+    .footer-icon-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .footer-icons {
+        gap: 50px;
+    }
+
+}
+
 @media (max-width: 600px) {
 
     .terminal-window {
@@ -602,6 +751,13 @@ body {
 }
 
 @media (max-width: 400px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+        text-align: center;
+    }
     
     .computer-wrapper {
         max-width: 240px;
@@ -614,120 +770,136 @@ body {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 375px) {
     
     .navbar {
-        flex-direction: column;
-        gap: 15px;
-        padding: 10px;
-        text-align: center;
+        padding: 8px 10px;
     }
 
-    .logo-container {
-        justify-content: center;
+    .site-title {
+        font-size: 0.9rem;
     }
 
-    .site-title{
-        font-size: 1rem;
+    .site-logo {
+        width: 30px;
+        height: 30px;
     }
 
     .nav-menu {
-        width: 100%;
-        overflow-x: auto;
-        padding-bottom: 5px;
-        justify-content: center;
+        gap: 6px;
     }
 
     .nav-btn {
-        padding: 6px 12px;
-        font-size: 0.8rem;
-        white-space: nowrap;
-    }
-
-    .canvas-placeholder {
-        font-size: 1.8rem;
-    }
-
-    .hero-section {
-        padding-top: 110px !important;
+        padding: 5px 8px;
+        font-size: 0.7rem;
     }
 
     #paintCanvas {
-        top: 110px !important;
-        height: calc(100vh - 110px) !important;
+        top: 20px !important;
+        height: calc(100vh - 450px) !important;
     }
 
-    .terminal-section {
-        padding: 20px 10px;
+    .canvas-placeholder {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
     }
 
-    .terminal-window {
-    width: 100%;
-    max-width: 900px;
-    height: 450px;
+    .terminal-text {
+        text-align: left !important;
+        font-size: 0.61rem !important;
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
+        white-space: normal !important;
     }
 
     .terminal-body {
-        padding: 15px;
-        font-size: 0.95rem;
+        padding: 12px;
+        font-size: 0.25rem;
+        line-height: 1.6;
     }
 
-    .terminal-title {
-        display: none;
+    .terminal-user {
+        font-size: 0.80rem !important;
     }
 
-    .works-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
+    .tools-divider, .works-divider {
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+    }
+
+    .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .tool-card {
+        padding: 12px 5px;
+    }
+
+    .tool-icon-wrapper {
+        width: 45px;
+        height: 45px;
+    }
+
+    .tool-name {
+        font-size: 0.75rem;
     }
 
     .project-preview {
-        height: 180px;
+        height: 150px;
     }
 
-    .works-divider {
-        font-size: 0.9rem;
+    .project-info {
+        padding: 15px;
+        gap: 8px;
     }
 
-    .footer-container {
-        grid-template-columns: 1fr;
-        gap: 30px;
+    .project-title {
+        font-size: 1rem;
+    }
+
+    .project-desc {
+        font-size: 0.8rem;
+    }
+
+    .footer-section {
+        padding: 40px 15px;
     }
 
     .computer-wrapper {
-        max-width: 380px;
+        max-width: 180px;
     }
 
-    .footer-text {
-        font-size: 1.2rem;
-    }
-
-    .footer-subtext {
-        font-size: 0.9rem;
-    }
-
-    .icon-link {
-        width: 25px;
-        height: 25px;
+    .computer-img {
+        width: 100% !important;
+        height: 100% !important;
+        margin: 0 !important; 
+        padding: 0 !important;
+        object-fit: contain !important;
     }
 
     .computer-screen {
-        font-size: 0.6rem;
-        left: 45px;
-        gap: 4px;
+        font-size: 0.30rem !important; /* Делаем шрифт меньше, чтобы ссылки не вылезали из маленького монитора */
+        gap: 5px !important;
+        left: 80px !important;
+        padding: 5px !important;
     }
-    
-    .computer-img {
-    margin-left: -80px;
-}
+
+    .footer-text {
+        font-size: 1.1rem;
+    }
+
+    .footer-subtext {
+        font-size: 0.8rem;
+    }
 
     .footer-icon-img {
-        width: 50px;
-        height: 50px;
+        width: 45px;
+        height: 45px;
     }
 
     .footer-icons {
-        gap: 50px;
+        gap: 45px;
     }
 
 }
