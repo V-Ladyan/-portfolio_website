@@ -770,6 +770,140 @@ html, body {
 
 }
 
+@media (max-width: 390px) {
+
+    .navbar {
+        padding: 8px 10px;
+    }
+
+    .site-title {
+        font-size: 0.9rem;
+    }
+
+    .site-logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .nav-menu {
+        gap: 6px;
+    }
+
+    .nav-btn {
+        padding: 5px 8px;
+        font-size: 0.7rem;
+    }
+
+    #paintCanvas {
+        top: 20px !important;
+        height: calc(100vh - 450px) !important;
+    }
+
+    .canvas-placeholder {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+
+    .terminal-text {
+        text-align: left !important;
+        font-size: 0.61rem !important;
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
+        white-space: normal !important;
+    }
+
+    .terminal-body {
+        padding: 12px;
+        font-size: 0.25rem;
+        line-height: 1.6;
+    }
+
+    .terminal-user {
+        font-size: 0.80rem !important;
+    }
+
+    .tools-divider, .works-divider {
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+    }
+
+    .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .tool-card {
+        padding: 12px 5px;
+    }
+
+    .tool-icon-wrapper {
+        width: 45px;
+        height: 45px;
+    }
+
+    .tool-name {
+        font-size: 0.75rem;
+    }
+
+    .project-preview {
+        height: 150px;
+    }
+
+    .project-info {
+        padding: 15px;
+        gap: 8px;
+    }
+
+    .project-title {
+        font-size: 1rem;
+    }
+
+    .project-desc {
+        font-size: 0.8rem;
+    }
+
+    .footer-section {
+        padding: 40px 15px;
+    }
+
+    .computer-wrapper {
+        max-width: 180px;
+    }
+
+    .computer-img {
+        width: 100% !important;
+        height: 100% !important;
+        margin: 0 !important; 
+        padding: 0 !important;
+        object-fit: contain !important;
+    }
+
+    .computer-screen {
+        font-size: 0.30rem !important; /* Делаем шрифт меньше, чтобы ссылки не вылезали из маленького монитора */
+        gap: 5px !important;
+        left: 80px !important;
+        padding: 5px !important;
+    }
+
+    .footer-text {
+        font-size: 1.1rem;
+    }
+
+    .footer-subtext {
+        font-size: 0.8rem;
+    }
+
+    .footer-icon-img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .footer-icons {
+        gap: 45px;
+    }
+
+}
+
 @media (max-width: 376px) {
     
     .navbar {
