@@ -19,6 +19,10 @@ html {
 
 html, body {
     background-color: #000000;
+    background-image: url('image/background.png');
+    background-repeat: repeat;
+    background-size: auto;
+    /* am_backspace :) */
     color: #ffffff;
     font-family: 'LCD40x2Display-Regular';
     overflow-x: hidden;
@@ -35,7 +39,6 @@ html, body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    background-color: #000000;
     border-bottom: 2px solid #333;
     position: fixed;
     top: 0;
@@ -133,7 +136,6 @@ html, body {
     justify-content: center;
     align-items: center;
     padding: 40px 20px;
-    background-color: #000000;
 }
 
 /* window_terminal */
@@ -223,7 +225,6 @@ html, body {
 /* Tools_Section */
 .tools-section {
     min-height: 50vh;
-    background-color: #000000;
     padding: 60px 20px;
     display: flex;
     flex-direction: column;
@@ -326,7 +327,6 @@ html, body {
 /* Section_work */
 .works-section {
     min-height: 100vh;
-    background-color: #000000;
     padding: 60px 20px;
     display: flex;
     flex-direction: column;
